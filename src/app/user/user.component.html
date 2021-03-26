@@ -1,0 +1,52 @@
+<form class="form-horizontal" (ngSubmit)="onSubmit()">
+  <fieldset>
+    <span>{{message}}</span>
+    <!-- Form Name -->
+    <legend class="center"><h2>Create a profile</h2></legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="firstName">First Name</label>
+      <div class="col-md-4">
+        <input id="firstName" name="firstName" type="text" [(ngModel)]="user.firstName" placeholder="" class="form-control input-md" required="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="lastName">Last Name</label>
+      <div class="col-md-4">
+        <input id="lastName" name="lastName" type="text" [(ngModel)]="user.lastName" placeholder="" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="age">Age</label>
+      <div class="col-md-4">
+        <input id="age" name="age" type="text" [(ngModel)]="user.age" placeholder="" class="form-control input-md" required="">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="city">City</label>
+      <div class="col-md-4">
+        <input id="city" name="city" type="text" [(ngModel)]="user.city" placeholder="" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="form-group end">
+      <label class="col-md-4 control-label" for="saveProfil"></label>
+      <div class="col-md-4">
+        <button id="saveProfil" type="submit" name="saveProfil" class="btn btn-primary" (click)="registerNow()">Create</button>
+      </div>
+    </div>
+
+  </fieldset>
+</form>

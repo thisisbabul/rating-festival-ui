@@ -1,0 +1,100 @@
+<legend class="center"><h2>Rated Festivals</h2></legend>
+<div class="row">
+  <div class="col-md-4 end">
+    <img src="../../assets/img/sonne_mond_sterne.png" width="200px" height="150px">
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <label class="control-label end" for="festivalName">Sonne Mond and Sterne Festival</label>
+    </div>
+    <div class="row top5">
+      <label class="control-label end" for="avgRating">Average Rating: </label>
+      <label class="control-label start5" for="avgRate">{{avgRatingOne}}/5</label>
+    </div>
+    <div class="row top5">
+      <label class="control-label end" for="comment">Comment: </label>
+      <table class="table">
+        <tbody>
+        <tr *ngFor="let rating of allRating">
+          <ng-container *ngIf="rating.festival == 1">
+            <td>{{rating.comment}}</td>
+            <td>By:</td>
+            <td>{{rating.author}}</td>
+          </ng-container>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <a class="btn btn-primary end" [routerLink]="['/ratingfestival/', 1]">Rate</a>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-4 end">
+    <img src="../../assets/img/fushion.png" width="200px" height="150px">
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <label class="control-label end" for="festivalName">Fushion Festival</label>
+    </div>
+    <div class="row top5">
+      <label class="control-label end" for="avgRating">Average Rating: </label>
+      <label class="control-label start5" for="avgRate">{{avgRatingTwo}}/5</label>
+    </div>
+    <div class="row top5">
+      <label class="control-label end" for="comment">Comment: </label>
+      <table class="table">
+        <tbody>
+        <tr *ngFor="let rating of allRating">
+          <ng-container *ngIf="rating.festival == 2">
+            <td>{{rating.comment}}</td>
+            <td>By:</td>
+            <td>{{rating.author}}</td>
+          </ng-container>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <a class="btn btn-primary end" [routerLink]="['/ratingfestival/', 2]">Rate</a>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-4 end">
+    <img src="../../assets/img/xjazz.png" width="200px" height="150px">
+  </div>
+  <div class="col-md-4">
+    <div class="row">
+      <label class="control-label end" for="festivalName">XJAZZ Festival</label>
+    </div>
+    <div class="row top5">
+      <label class="control-label end" for="avgRating">Average Rating: </label>
+      <label class="control-label start5" for="avgRate">{{avgRatingThree}}/5</label>
+    </div>
+    <div class="row top5">
+      <label class="control-label end" for="comment">Comment: </label>
+      <table class="table">
+        <tbody>
+        <tr *ngFor="let rating of allRating">
+          <ng-container *ngIf="rating.festival == 3">
+            <td>{{rating.comment}}</td>
+            <td>By:</td>
+            <td>{{rating.author}}</td>
+          </ng-container>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <a class="btn btn-primary end" [routerLink]="['/ratingfestival/', 3]">Rate</a>
+  </div>
+</div>

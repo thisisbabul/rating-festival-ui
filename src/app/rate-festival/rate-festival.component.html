@@ -1,0 +1,47 @@
+<form>
+  <h5 class="center darkgreen">{{message}}</h5>
+  <legend class="center"><h2>{{festName}}</h2></legend>
+  <div class="row">
+    <div class="col-md-6 end">
+      <img src="../../assets/img/{{imageName}}.png" width="200px" height="150px">
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="form-group">
+          <label class="col-md-2 control-label end" for="rating">Rating: </label>
+          <div class="col-md-4">
+            <input id="rating" min="1" max="5" (keyup)="preventInput($event)" [(ngModel)]="capacity" name="rating" type="number" [(ngModel)]="rating.rating" placeholder="" class="form-control input-md">
+          </div>
+        </div>
+      </div>
+
+      <div class="row top20">
+        <div class="form-group">
+          <label class="col-md-2 control-label end" for="comment">Comment: </label>
+          <div class="col-md-4">
+            <input id="comment" name="comment" type="text" [(ngModel)]="rating.comment" placeholder="" class="form-control input-md">
+          </div>
+        </div>
+      </div>
+
+      <div class="row top20">
+        <div class="form-group">
+          <label class="col-md-2 control-label end" for="author">Author: </label>
+          <div class="col-md-4">
+            <input id="author" name="author" type="text" [(ngModel)]="rating.author" placeholder="" class="form-control input-md">
+            <input name="festival" type="text" [(ngModel)]="rating.festival" placeholder="" class="form-control input-md hidden">
+          </div>
+        </div>
+      </div>
+
+      <div class="row top20">
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="saveRating"></label>
+          <div class="col-md-4">
+            <button id="saveRating" name="saveRating" type="submit" class="btn btn-primary" (click)="saveRating()">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

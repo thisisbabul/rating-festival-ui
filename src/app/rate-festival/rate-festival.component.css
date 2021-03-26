@@ -1,0 +1,24 @@
+.start {
+  text-align: start;
+}
+.center {
+  text-align: center;
+}
+.end {
+  text-align: end;
+}
+.top5 {
+  margin-top: 5px;
+}
+.top20 {
+  margin-top: 20px;
+}
+.start5 {
+  margin-left: 5px;
+}
+.darkgreen{
+  color: darkgreen;
+}
+.hidden {
+  display: none;
+}
